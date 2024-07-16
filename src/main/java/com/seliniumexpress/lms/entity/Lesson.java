@@ -35,6 +35,18 @@ public class Lesson {
     @JsonBackReference
 	private Course course;
 	
+	public Lesson(String lessonText, String lessonName, String link, Course course) {
+	
+		this.lessonText = lessonText;
+		this.lessonName = lessonName;
+		this.link = link;
+		this.course = course;
+	}
+
+	public Lesson() {
+		
+	}
+
 	public int getLessonId() {
 		return lessonId;
 	}
