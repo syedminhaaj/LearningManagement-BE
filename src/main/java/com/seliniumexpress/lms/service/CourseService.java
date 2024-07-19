@@ -30,4 +30,8 @@ public class CourseService {
 	
 	}
 
+	@Transactional
+	public Course saveCourse(Course course) {
+		 return courseRepo.save(course);
+	}
 }

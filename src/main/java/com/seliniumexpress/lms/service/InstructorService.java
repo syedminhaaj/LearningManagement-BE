@@ -19,6 +19,10 @@ public class InstructorService {
         return instructorRepository.findAll();
     }
     
+    
+    public Optional<Instructor> findById(long id) {
+    	return instructorRepository.findById(id);
+    }
     public Instructor saveInstructor(Instructor instructor) {
     	System.out.println("what is instructor"+instructor);
         return instructorRepository.save(instructor);

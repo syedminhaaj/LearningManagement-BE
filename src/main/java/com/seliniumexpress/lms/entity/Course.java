@@ -94,11 +94,6 @@ public class Course {
 		this.lessons = lessons;
 	}
 	
-	
-	
-	
-	
-
 }
 
 
