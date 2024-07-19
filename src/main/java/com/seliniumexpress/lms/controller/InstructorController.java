@@ -21,7 +21,7 @@ import com.seliniumexpress.lms.entity.Instructor;
 import com.seliniumexpress.lms.service.InstructorService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/") 
+//@CrossOrigin(origins = "http://localhost:4200/") 
 public class InstructorController {
 	@Autowired
     private InstructorService instructorService;

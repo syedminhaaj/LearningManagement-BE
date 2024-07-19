@@ -21,7 +21,8 @@ import com.seliniumexpress.lms.service.CourseService;
 import com.seliniumexpress.lms.service.InstructorService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/") 
+//@CrossOrigin(origins = "http://localhost:4200/") 
+//@CrossOrigin(origins="https://main.d1eegfedd8fdr9.amplifyapp.com/")
 public class CourseController {
 	
 	@Autowired
