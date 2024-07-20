@@ -13,25 +13,25 @@ import com.seliniumexpress.lms.repo.CourseRepository;
 
 @Service
 public class CourseService {
-	
+
 	@Autowired
 	private CourseRepository courseRepo;
 	
+
 	@Transactional
 	public Optional<Course> findCourseById(int id) {
-		
-		 Optional<Course> course = courseRepo.findById(id);
-		 
-		 //Below alternatives if @JsonManagedReference is not working in entities
-		 //Course course = couse.get();
-         //Hibernate.initialize(course.getLessons());
-       
-		 return course;
-	
+
+		Optional<Course> course = courseRepo.findById(id);
+		// Below alternatives if @JsonManagedReference is not working in entities
+		// Course course = couse.get();
+		// Hibernate.initialize(course.getLessons());
+
+		return course;
+
 	}
 
 	@Transactional
 	public Course saveCourse(Course course) {
-		 return courseRepo.save(course);
+		return courseRepo.save(course);
 	}
 }

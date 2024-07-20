@@ -17,7 +17,7 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        //config.addAllowedOrigin("http://localhost:4200"); // Allow the Angular app's origin - https://main.d1eegfedd8fdr9.amplifyapp.com/
+        config.addAllowedOrigin("http://localhost:4200"); // Allow the Angular app's origin - https://main.d1eegfedd8fdr9.amplifyapp.com/
         config.addAllowedOrigin("https://main.d1eegfedd8fdr9.amplifyapp.com");
         config.addAllowedHeader("*"); // Allow all headers
         config.addAllowedMethod("*"); // Allow all HTTP methods

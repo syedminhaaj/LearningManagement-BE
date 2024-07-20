@@ -24,4 +24,9 @@ public class LessonService {
 		 return lesson;
 	
 	}
+	
+	@Transactional
+	public Lesson saveLesson(Lesson lesson) {
+		return lessonRepo.save(lesson);
+	}
 }
